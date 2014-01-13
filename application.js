@@ -17,12 +17,20 @@ $(document).ready(function() {
 		
 		
 			if(difference==0){
-				$("#answerbox").text("Correct")
+				$("#answerbox").text("Correct!");
+				$("#number").text(guessNumber)
+				$("#guess").val("");
 			}else if(difference<10){
-				$("#answerbox").text("Hot")
+				$("#answerbox").text("Hot!");
+				$("#number").text(guessNumber)
+				$("#guess").val("");
 			}else{
-				$("#answerbox").text("Cold")
+				$("#answerbox").text("Cold!");
+				$("#number").text(guessNumber);
+				$("#guess").val("");
 		};
+		
+				
 	});
 	
 	$("#reset").click(function() {
