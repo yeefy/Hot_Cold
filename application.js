@@ -14,9 +14,15 @@ $(document).ready(function() {
 		
 			var guessNumber = $("#guess").val();
 			
-			if (guessNumber<=0 || guessNumber >=101){alert("Choose a number between 1 and 100!")};
+			if (guessNumber<=0 || guessNumber >=101){
+				alert("Choose a number between 1 and 100!");
+				return false;
+				};
 			
-			if (isNaN(guessNumber)) {alert("That's not a number!")};
+			if (isNaN(guessNumber)) {
+				alert("That's not a number!");
+				return false;
+				};
 		
 			var difference = Math.abs(guessNumber-randomNumber);
 			var printNumber = $("#number").text(guessNumber);
