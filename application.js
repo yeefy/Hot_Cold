@@ -30,7 +30,8 @@ $(document).ready(function() {
 			if(difference==0){
 				$("#answerbox").text("Correct! Play Again!");
 				printNumber
-				$("#guess").val("");	
+				$("#guess").val("");
+				document.getElementById("guess").disabled=true;	
 				randomNumber = Math.floor((Math.random()*100)+1) ;
 			}else if(difference<5){
 				$("#answerbox").text("Hot!");
@@ -48,6 +49,7 @@ $(document).ready(function() {
 				$("#guess").val("");
 				
 		};
+		
 		
 		
 				
