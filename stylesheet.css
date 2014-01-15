@@ -52,17 +52,29 @@ table {
 
 /*Hot or Cold CSS code*/
 
+
 div{
 	display:block;
+	position:static;
 	text-align:center;
 }
 
+#header{
+	font-family:Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	font-size:60px;
+	color:#0C9;
+	margin-top:50px;
+	padding:50px;
+}
+
+
 #number{
-	margin-top:20%;
 	font-size:60px;
 	font-family:Tahoma, Geneva, sans-serif;
 	font-weight:bold;
 }
+
 
 #input{
 	
@@ -71,9 +83,11 @@ div{
 
 #guess{
 	height:50px;
-	width:50px;
+	width:80px;
 	font-size:40px;
 	margin:20px;
+	text-align:center;
+	top:50%;
 }
 
 #submit{
@@ -82,6 +96,7 @@ div{
 
 #reset{
 	margin: 10px;
+	
 }
 
 
@@ -89,4 +104,5 @@ div{
 	font-family:Tahoma, Geneva, sans-serif;
 	font-size:36px;
 	font-weight:bold;
+	padding:50px;
 }
